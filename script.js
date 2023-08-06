@@ -69,11 +69,11 @@
 // Q5 solve
 
 
-let c = 60;
-let f=0;
-f=  (c * (9 / 5)) + 32;
+// let c = 60;
+// let f=0;
+// f=  (c * (9 / 5)) + 32;
 
-console.log("The value of the temperature in Fahrenheit is " + f);
+// console.log("The value of the temperature in Fahrenheit is " + f);
 
 
 
@@ -94,4 +94,63 @@ console.log("The value of the temperature in Fahrenheit is " + f);
 // let string = prompt (" enter string");
 // let result = countVowels(string);
 // console.log(result);
+
+// object exercise
+
+// QA code
+
+
+// let student = {
+
+//     name: "max",
+//     age: 27
+// };
+
+// console.log(student.name);
+
+
+// Qb code
+
+// const product = {
+
+    
+//     discount1: 0.10,
+//     discount2: 0.7,
+
+//     originalPrice : (price)=>{
+// if(price>100){
+//     return price * discount1;
+// }
+// else{
+//     return price*discount2;
+// }
+// }
+
+//     }
+
+//    let result = product.originalPrice(180);
+//    console.log(result);
+
+// 2code
+
+const product = {
+    discount1: 0.10,
+    discount2: 0.07, // It should be 0.07 for a 7% discount, not 0.7 (which would mean 70% discount).
+
+    originalPrice: (price)=> { // We need to use the 'function' keyword for methods inside an object.
+        if (price > 100) {
+            return price * product.discount1; // We need to use 'this' to access the properties within the object.
+        } else {
+            return price * product.discount2; // Again, use 'this' for accessing properties.
+        }
+    }
+};
+
+let result = product.originalPrice(170);
+console.log(result);
+
+
+// q3 code
+
+let
 
