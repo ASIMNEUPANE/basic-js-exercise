@@ -118,3 +118,35 @@ const { upperCase } = require("upper-case")
 // })
 
 // console.log(newArr)
+
+
+
+// 10. Write a function Myfunc that takes in an array of numbers and multiply each of the elements by 2.
+// 
+// const arr = [2,3,4,5,6]
+
+// const Myfunc= ()=>{
+//     const multi = arr.map((val)=>{
+// return val*2
+//     })
+//     return multi
+// }
+// console.log(Myfunc())
+
+
+// 11.
+
+// ```code
+// let food = ['Noodle', 'Pasta', 'Ice-cream'];
+// let food = ['Fries', 'Ice-cream', 'Pizza'];
+// ```
+
+// Compare the 2 arrays and find common food if any.
+
+// let food = ['Noodle', 'Pasta', 'Ice-cream'];
+//  let food2 = ['Fries', 'Ice-cream', 'Pizza'];
+
+//  const commonFood = food.filter(items=>  food2.includes( items) )
+
+
+// console.log(commonFood)
