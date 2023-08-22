@@ -70,15 +70,39 @@
 
 
 
-const miles = [95, 572, 318, 207]
+// const miles = [95, 572, 318, 207]
 
 
-const convertor = ()=>{
-   const totalDistanceInKilometers = miles.map((value)=>{
-return value*1.60934
-   })
-   return totalDistanceInKilometers;
-}
+// const convertor = ()=>{
+//    const totalDistanceInKilometers = miles.map((value)=>{
+// return value*1.60934
+//    })
+//    return totalDistanceInKilometers;
+// }
 
-console.log(convertor())
+// console.log(convertor())
+
+// 8.  Square and sum the array elements using the arrow function and then find the average of the array.
+
+// const array = [95, 572, 318, 207]
+
+//  const Square = array.map((value)=>{    
+//     return value*value})
+
+
+
+// const sum = Square.reduce((val,val1)=>{
+//     return val+val1;
+// })
+// console.log(sum)
+
+// const average = (sum)=>{
+    
+//     return sum/2
+// }
+// console.log(average(sum))
+
+
+
+
 
