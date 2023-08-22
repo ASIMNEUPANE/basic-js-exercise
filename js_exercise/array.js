@@ -3,6 +3,8 @@
 // // return a+b,0
 // // })
 
+const { upperCase } = require("upper-case")
+
 // // console.log(add());
 
 // // Q1code
@@ -105,4 +107,14 @@
 
 
 
+// 9.  Create a new array whose elements is in uppercase of words present in the original array.
 
+// const arr = ['ASIM', "asim","asu","ASU"]
+
+// const newArr = arr.filter((item)=>{
+//     return item == item.toUpperCase()
+ 
+   
+// })
+
+// console.log(newArr)
