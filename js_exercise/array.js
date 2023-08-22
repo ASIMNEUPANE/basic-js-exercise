@@ -33,14 +33,7 @@
 // console.log("Maximum value:", maxVal);
 // console.log("Minimum value:", minVal);
 
-
-
 // Write a program to reverse an array of integer values.
-
-
-
-
-
 
 // const array = [12, 45, 6, 89, 34, 67, 23];
 // const reversedArray = array.reverse();
@@ -48,29 +41,44 @@
 // console.log("Original array:", array);
 // console.log("Reversed array:", reversedArray);
 
-
 // const array = [12, 45, 6, 89, 34, 67, 23];
 // const reversedArray = [...array].reverse();
 
 // console.log("Original array:", array);
 // console.log("Reversed array:", reversedArray);
 
-
 // 5.  Write a program to find the second largest element in an array.
 
-const numbers = [12, 45, 1, 78, 23, 65, 89, 32];
-
-// Sort the array in ascending order
- numbers.sort(function(a, b) {
-    return a - b;
-});
 
 
+// let myList = [1, 3, 4, 5, 9, 15, 10];
+// let newList = myList.sort((a, b) => a - b);
+// let lastElement = newList[newList.length - 2];
+
+// console.log(newList);
+
+// 6.  Write a Javascript program to find the sum of the two elements of a given array equal to a given integer.
+// Eg:
+// Sample array: [1,2,4,5,6]
+// Target value: 6.
+
+// i will do it later
+
+
+// 7.  Write a function that converts an array of values from miles to kilometres using the map method. In the end, 
+// add the kilometres up in a new variable called "totalDistanceInKilometers" and return this variable.
 
 
 
+const miles = [95, 572, 318, 207]
 
 
+const convertor = ()=>{
+   const totalDistanceInKilometers = miles.map((value)=>{
+return value*1.60934
+   })
+   return totalDistanceInKilometers;
+}
 
-
+console.log(convertor())
 
