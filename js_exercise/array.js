@@ -64,7 +64,9 @@ const { upperCase } = require("upper-case")
 // Sample array: [1,2,4,5,6]
 // Target value: 6.
 
-// i will do it later
+
+
+
 
 
 // 7.  Write a function that converts an array of values from miles to kilometres using the map method. In the end, 
