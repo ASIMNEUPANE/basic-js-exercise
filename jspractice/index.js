@@ -212,15 +212,51 @@
 // };
 // last([1, 2, 3, 4, 5], 3);
 
+// write a js program to find the most frequent item of an array?
 
+// const frequentArr = (arr) => {
+//   let repet = {};
+//   arr.forEach((item) => {
 
-const frequentArr = (arr) => {
-  let repet = {};
-  arr.forEach((item) => {
-   
-   if(repet.hasOwnProperty(item)) repet[item]++
-   else repet[item] =1
-  });
- console.log(Object.keys(repet))
-};
-frequentArr(["a", "a", "b"]);
+//    if(repet.hasOwnProperty(item)) repet[item]++
+//    else repet[item] =1
+//   });
+//  const ans =Object.keys(repet).reduce((acc,num)=>{
+// return repet[acc] > repet[num] ? acc : num;
+//  })
+//  console.log(ans)
+// };
+// frequentArr(["a", "a", "b"]);
+
+// write a js program to shuffle an array;
+
+// const shuffle = (arr) => {
+//   let length = arr.length;
+//   while (length > 0) {
+//     length--;
+//     let random = Math.floor(Math.random() * length);
+//     let temp = arr[length];         ====================imp==================
+//     arr[length] = arr[random];
+//     arr[random] = temp;
+//   }
+//   console.log(arr);
+// };
+// shuffle([1, 2, 3, 4, 5, 6]);
+
+// 25 write a js program to computer the intersection of two arrays sample data:
+// console.log(union([1,2,3,4],[100,2,1,10]))
+
+// const intersection = (arr1, arr2) => {
+//  return arr1.filter((e)=> arr2.includes(e))
+// };
+
+// console.log(union([1, 2, 3, 4], [100, 2, 1, 10]));
+
+// 26  write a js program to computer the union of two arrays sample data:
+// console.log(union([1,2,3,4],[100,2,1,10]))
+
+// const union = (arr1, arr2) => {
+//   return [...new Set(arr1.concat(arr2))];
+// };
+
+// console.log(union([1, 2, 3, 4], [100, 2, 1, 10]));
