@@ -183,3 +183,16 @@
 // };
 
 // console.log(cloneArr([1, 2, 3, 4]));
+
+// 16. write  a js function to get the first element of an array . Passing a parameter 'n
+// will return the last 'n' elements of the array,
+
+// const first = (arr, n = 1) => {
+//   if (n < arr.length) {
+//     for (let i = 0; i < n; i++) {
+//       console.log(arr[i]);
+//     }
+//   }
+//   else{console.log(`${n} element is not there `)}
+// };
+// first([1, 2, 3, 4, 5, 5], 10);
