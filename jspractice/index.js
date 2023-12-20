@@ -196,3 +196,31 @@
 //   else{console.log(`${n} element is not there `)}
 // };
 // first([1, 2, 3, 4, 5, 5], 10);
+
+// 16. write  a js function to get the first element of an array . Passing a parameter 'n
+// will return the last 'n' elements of the array,
+
+// const last = (arr, n = 1) => {
+//     if(n<= arr.length){
+//         for (let i = 0; i < n; i++) {
+//             console.log(arr[arr.length - 1 - i]);
+//           }
+//     }else{
+//         console.log(`${n} is not there`)
+//     }
+
+// };
+// last([1, 2, 3, 4, 5], 3);
+
+
+
+const frequentArr = (arr) => {
+  let repet = {};
+  arr.forEach((item) => {
+   
+   if(repet.hasOwnProperty(item)) repet[item]++
+   else repet[item] =1
+  });
+ console.log(Object.keys(repet))
+};
+frequentArr(["a", "a", "b"]);
