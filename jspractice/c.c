@@ -453,31 +453,33 @@
 
 // WAP to find 10 number using pointer;
 
-// #include <stdio.h>
-// int main(){
-//     int num[10]={1,1,1,1,1,1,1,1,1,1};
-//     int sum = 0;
-
-//     int *ptr = num;
-//     for(int i = 0 ; i <10; i++){
-//         sum += ptr[i];
-//     }
-//     printf("sum of all number is %d\n", sum);
-//     return 0;
-// }
-
 #include <stdio.h>
-#include <math.h>
-
 int main()
 {
-    double x, y;
-    printf("Enter x value ");
-    scanf("%lf", &x);
-    printf("Enter y value ");
-    scanf("%lf", &y);
+    int num[10] = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1};
+    int sum = 0;
 
-    double result = pow(x, y);
-    printf("%2lf^%2lf = %2lf\n ", x, y, result);
+    int *ptr = num;
+    for (int i = 0; i < 10; i++)
+    {
+        sum += ptr[i];
+    }
+    printf("sum of all number is %d\n", sum);
     return 0;
 }
+
+// #include <stdio.h>
+// #include <math.h>
+
+// int main()
+// {
+//     double x, y;
+//     printf("Enter x value ");
+//     scanf("%lf", &x);
+//     printf("Enter y value ");
+//     scanf("%lf", &y);
+
+//     double result = pow(x, y);
+//     printf("%2lf^%2lf = %2lf\n ", x, y, result);
+//     return 0;
+// }
