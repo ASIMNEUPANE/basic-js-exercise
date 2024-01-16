@@ -453,20 +453,20 @@
 
 // WAP to find 10 number using pointer;
 
-#include <stdio.h>
-int main()
-{
-    int num[10] = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1};
-    int sum = 0;
+// #include <stdio.h>
+// int main()
+// {
+//     int num[10] = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1};
+//     int sum = 0;
 
-    int *ptr = num;
-    for (int i = 0; i < 10; i++)
-    {
-        sum += ptr[i];
-    }
-    printf("sum of all number is %d\n", sum);
-    return 0;
-}
+//     int *ptr = num;
+//     for (int i = 0; i < 10; i++)
+//     {
+//         sum += ptr[i];
+//     }
+//     printf("sum of all number is %d\n", sum);
+//     return 0;
+// }
 
 // #include <stdio.h>
 // #include <math.h>
@@ -483,3 +483,413 @@ int main()
 //     printf("%2lf^%2lf = %2lf\n ", x, y, result);
 //     return 0;
 // }
+
+// #include <stdio.h>
+
+// int isPrime(int numb) {
+//     if (numb <= 1) {
+//         return 0;
+//     }
+
+//     for (int i = 2; i * i <= numb; i++) {
+//         if (numb % i == 0) {
+//             return 0;
+//         }
+//     }
+//     return 1;
+// }
+
+// int main() {
+//     int numb;
+//     printf("Enter a number: ");
+//     scanf("%d", &numb);
+
+//     if (isPrime(numb)) {
+//         printf("%d is a prime number\n", numb);
+//     } else {
+//         printf("%d is a composite number\n", numb);
+//     }
+
+//     return 0;
+// }
+
+// #include <stdio.h>
+
+// int isPrime(int numb)
+// {
+//     if (numb <= 1)
+//     {
+//         return 0;
+//     }
+
+//     for (int i = 2; i * i <= numb; i++)
+//     {
+//         if (numb % i == 0)
+//         {
+//             return 0;
+//         }
+//     }
+//     return 1;
+// }
+
+// int main()
+// {
+//     int count = 0;
+
+//     for (int numb = 100; numb <= 500; numb++)
+//     {
+
+//         if (isPrime(numb))
+//         {
+//             count++;
+
+//             printf("%dis prime number \n", numb);
+//         }
+//     }
+//     printf("%dis prime number \n", count);
+
+//     return 0;
+// }
+
+// Write a C program using structure that reads the record of 35 students with member’s roll, name, address and makes and display the records of students who have obtained greater than 250 marks.
+
+// #include <stdio.h>
+
+// struct Student
+// {
+//     int roll;
+//     char name[50];
+//     char address[100];
+//     int marks;
+// };
+
+// int main()
+// {
+
+//     struct Student students[35];
+
+//     for (int i = 0; i < 35; i++)
+//     {
+//         printf("Enter details for student %d:\n", i + 1);
+//         printf("Roll: ");
+//         scanf("%d", &students[i].roll);
+//         printf("Enter the name of the student :");
+//         scanf("%s", students[i].name);
+//         printf("Enter the adress of the student :");
+//         scanf("%s", students[i].address);
+//         printf("Enter the marks of the student :");
+//         scanf("%d", &students[i].marks);
+//     }
+//     printf("\nStudents with more than 250 marks:\n");
+
+//     for (int i = 0; i < 35; i++)
+//     {
+//         if ( students[i].marks > 250) {
+//             printf("Roll: %d, Name: %s, Address: %s, Marks: %d\n", students[i].roll, students[i].name, students[i].address, students[i].marks);
+//         }
+
+//         }
+//         return 0;
+// }
+
+//  Write a c program to store the player name, runs scored, wickets taken of 20 cricketers
+//  using structure along with pointer then arrange the players in order of maximum wickets
+//  to minimum wickets they had taken.
+
+// #include <stdio.h>
+// #include <stdlib.h>
+// #include <string.h>
+
+// struct Player
+// {
+//     char name[50];
+//     int scored;
+//     int wicketTaken;
+// };
+// int main()
+// {
+
+//     struct Player *players[20];
+
+//     for (int i = 0; i < 20; i++)
+//     {
+//         printf("enter details of players %d", i + 1);
+//         printf("name :");
+//         scanf("%s", players[i]->name);
+//         printf("scored :");
+//         scanf("%d", &players[i]->scored);
+//         printf("wicketTaken :");
+//         scanf("%d", &players[i]->wicketTaken);
+//     }
+
+//     // BUbble sort
+
+//     for(int i = 0; i<19; i++){
+//         for(int j = 0; j<19-i; j++){
+//             if(players[j]->wicketTaken< players[j+1]->wicketTaken){
+//             // if(players[j]->wicketTaken< players[j+1]->wicketTaken){--------- min to max logic
+//                 struct Player* temp = players[j];
+//                 players[j]= players[j+1];
+//                 players[j+1]=temp;
+//             }
+//         }
+//     }
+
+//     printf("\n Playes in order of maximum to minimum wickets taken:\n");
+//     for (int i = 0; i < 20; i++)
+//     {
+//         printf("Name: %s, Scored: %d, Wickets Taken: %d\n", players[i]->name, players[i]->scored, players[i]->wicketTaken);
+//     }
+//     return 0;
+// }
+
+// wite a c program to enter bid , title , price , pages of 100 books into stucture variable called book and sort them in desending order on the basics of their title with use of pointer.
+
+// #include <stdio.h>
+// #include <stdlib.h>
+// #include <string.h>
+
+// struct Book
+// {
+//     int bid;
+//     char title[50];
+//     int price;
+//     int pages;
+// };
+
+// int main()
+// {
+//     struct Book* books[5];
+
+//     for (int i = 0; i < 5; i++)
+//     {
+//         books[i] = (struct Book*)malloc(sizeof(struct Book));
+//         printf("Enter details for book %d:\n", i + 1);
+//         printf("Bid: ");
+//         scanf("%d", &books[i]->bid);
+//         printf("Title: ");
+//         scanf("%s", books[i]->title);
+//         printf("Price: ");
+//         scanf("%d", &books[i]->price);
+//         printf("Pages: ");
+//         scanf("%d", &books[i]->pages);
+//     }
+
+//     // Bubble sort
+//     for (int i = 0; i < 4; i++)
+//     {
+//         for (int j = 0; j < 4 - i; j++)
+//         {
+//             if (strcmp(books[j]->title, books[j + 1]->title) < 0)
+//             {
+//                 struct Book* temp = books[j];
+//                 books[j] = books[j + 1];
+//                 books[j + 1] = temp;
+//             }
+//         }
+//     }
+
+//     printf("\nBooks in descending order of title:\n");
+//     for (int i = 0; i < 5; i++)
+//     {
+//         printf("Bid: %d, Title: %s, Price: %d, Pages: %d\n", books[i]->bid, books[i]->title, books[i]->price, books[i]->pages);
+//         free(books[i]);
+//     }
+
+//     return 0;
+// }
+
+// #include <stdio.h>
+// #include <stdlib.h>
+// #include <string.h>
+
+// struct Student
+// {
+//     int rollNo;
+//     char name[50];
+//     char address[50];
+// };
+
+// int main()
+// {
+
+//     struct Student* students[5];
+
+//     for (int i = 0; i < 5; i++)
+//     {
+
+//         students[i] = (struct Student*)malloc(sizeof(struct Student));
+//         printf("enter studen : %d ", i + 1);
+//         printf("rool no : ");
+//         scanf("%d", &students[i]->rollNo);
+//         printf("name : ");
+//         scanf("%s", students[i]->name);
+//         printf("address: ");
+//         scanf("%s", students[i]->address);
+//     }
+
+//     for(int i = 0; i<5; i++){
+//         if(strcmp(students[i]->address ,"kathmandu") == 0){
+//          printf("name : %s \n", students[i]->name);
+//                  free(students[i]);
+
+//         }
+//     }
+//     return 0;
+// }
+
+
+// ---------------------Stucture qeustion ------------------
+
+
+                      
+                //   ## 1
+
+//  Write a C program using structure that reads the record of 35 students
+//  with member’s roll, name, address and makes and display the records of students 
+// who have obtained greater than 250 marks.
+
+// #include <stdio.h>
+// #include <stdlib.h>
+
+// struct Student {
+//     int roll;
+//     char name[50];
+//     char address[50];
+//     int marks;
+// };
+
+// int main() {
+//     struct Student* students[35];
+
+//     for(int i = 0; i < 35; i++) {
+//         students[i] = (struct Student*) malloc(sizeof(struct Student));
+//         printf("Enter details for student %d:\n", i+1);
+//         printf("Roll: ");
+//         scanf("%d", &students[i]->roll);
+//         printf("Name: ");
+//         scanf("%s", students[i]->name);
+//         printf("Address: ");
+//         scanf("%s", students[i]->address);
+//         printf("Marks: ");
+//         scanf("%d", &students[i]->marks);
+//     }
+
+//     printf("\nStudents with more than 250 marks:\n");
+//     for(int i = 0; i < 35; i++) {
+//         if(students[i]->marks > 250) {
+//             printf("Roll: %d, Name: %s, Address: %s, Marks: %d\n", students[i]->roll, students[i]->name, students[i]->address, students[i]->marks);
+//         }
+//         free(students[i]);
+//     }
+
+//     return 0;
+// }
+
+//                #2
+
+//  Write a c program to store the player name, runs scored, wickets taken of 20 cricketers
+//  using structure along with pointer then arrange the players in order of maximum wickets
+//  to minimum wickets they had taken.
+
+// #include <stdio.h>
+// #include <stdlib.h>
+// #include <string.h>
+
+// struct Player{
+// char name[50];
+// int runs;
+// int wicketTaken;
+// };
+
+// int main(){
+
+// struct Player* players[20];
+
+
+// for(int i =0; i<20;i++){
+
+// players[i]= (struct Player*)malloc(sizeof (struct Player));
+// printf("ENter a details of players no. %d ", i+1);
+
+// printf("name :");
+// scanf("%s", players[i]->name);
+// printf("runs :");
+// scanf("%d", &players[i]->runs);
+// printf("wicketTaken :");
+// scanf("%d", &players[i]->wicketTaken);
+// }
+
+// for(int i =0; i<19; i++){
+//     for(int j = 0 ; j<19 - i ; j++){
+//         if(players[j]->wicketTaken<players[j+1]->wicketTaken){
+//             struct Player* temp = players[j];
+//             players[j]= players[j+1];
+//             players[j+1]= temp;
+//         }
+//     }
+// }
+
+// printf("\n Playes in order of maximum to minimum wickets taken:\n");
+//     for (int i = 0; i < 20; i++)
+//     {
+//         printf("Name: %s, Scored: %d, Wickets Taken: %d\n", players[i]->name, players[i]->runs, players[i]->wicketTaken);
+//     }
+//     return 0;
+
+// }
+
+//  # question number 3--------------
+// wite a c program to enter bid , title , price , pages of 100 books into stucture variable called book
+//  and sort them in desending order on the basics of their title with use of pointer.
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+struct Book{
+    int bid;
+    char title[50];
+    int price;
+    int pages;
+};
+
+int main(){
+    struct Book* books[100];
+
+printf("Enter the details of the books");
+
+for(int i = 0; i<100; i++){
+    books[i]= (struct Book*)malloc( sizeof(struct Book));
+    printf("Enter the details of books no : %d ", i+1);
+    printf("bid :");
+    scanf("%d", &books[i]->bid);
+    printf("title :");
+    scanf("%s", books[i]->title);
+    printf("price :");
+    scanf("%s", &books[i]->price);
+    printf("Pages :");
+    scanf("%s", &books[i]->pages);
+
+}
+
+for(int i = 0 ; i <99; i++){
+    for(int j = 0 ; j < 99-i; j++){
+        if(strcmp(books[j]->title, books[j+1]->title) <0){
+           
+           struct Book* temp = books[j];
+           books[j]= books[j+1];
+           books[j+1]= temp;
+
+        }
+    }
+}
+
+printf("maximum to minimum");
+for(int i = 0 ; i<100; i++){
+    printf("bid : %d ", books[i]->bid);
+    free(books[i]);
+}
+
+}
+
