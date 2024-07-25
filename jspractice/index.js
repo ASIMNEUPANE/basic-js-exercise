@@ -260,3 +260,44 @@
 // };
 
 // console.log(union([1, 2, 3, 4], [100, 2, 1, 10]));
+
+// const word = "hello its me asim neupane kssssssssssssj";
+
+// // split the word
+// // check find lenght  every array which is been split by
+
+// const sep = word.split(" ");
+// // console.log(sep)
+
+// let highest = [];
+// sep.map((sep) => {
+//   if (highest.length === 0) {
+//     highest.push(sep);
+//   }
+//   if (highest[0].split("").length < sep.split("").length) {
+//     highest.splice(0);
+//     highest.push(sep);
+//   }
+// });
+// console.log(highest);
+
+// const arr ='asim'
+
+// for(let i = 0 ; i<arr.length; i++){
+//     console.log(arr[i])
+// }
+
+const generateHash = (str) => {
+  const split = str.split(" ");
+  let final = [];
+  split.map((word) => {
+   final.push(word.charAt(0).toUpperCase())
+  });
+  return final;
+};
+
+const word = "hello its me asim neupane kssssssssssssj";
+console.log(generateHash(word));
+
+
+const nums = [1,2,3,2,3,1]

@@ -253,6 +253,46 @@
 // }
 
 // #include <stdio.h>
+// int main(){
+//     int arr[5]={1,2,3,4,5};
+//     for(int i = 0; i<5;i++){
+//         for(int j=0; j<=i; j++){
+//             printf("%d\t", arr[j]);
+//         }
+//         printf("\n");
+
+//     }
+//     return 0;
+// }
+// #include <stdio.h>
+// int main(){
+//     char str[4]="asim";
+//     for(int i = 0; i<4; i++){
+//         for(int j = 0; j<=i; j++){
+//             printf("%c ",str[j]);
+//         }
+//         printf("\n");
+//     }
+//     return 0;
+// }
+
+// #include <stdio.h>
+// int main(){
+//     int num[5]= {1,2,3,4,5};
+
+//     for(int i = 0; i<5; i++){
+//         for(int j = 0 ; j <i ; j++){
+//             printf(" ");
+
+//         }
+//         for(int k= i ; k <5;k++){
+//                 printf("%d ", num[k]);
+//             }
+//         printf("\n");
+
+//     }
+//     return 0;
+// }
 
 // int main() {
 //     int arr[5] = {1, 2, 3, 4, 5};
@@ -299,7 +339,23 @@
 
 // #include <stdio.h>
 
-// int main() {
+// int main()
+// {
+//     int arr[5] = {1, 2, 3, 4, 5};
+//     for (int i = 0; i < 5; i++)
+//     {
+//         for (int j = 0; j < i; j++)
+//         {
+//             printf("  ");
+//         }
+//         for (int k = i; k < 5; k++)
+//         {
+//             printf("%d ", arr[k]);
+//         }
+//         printf("\n");
+//     }
+//     return 0;
+// }
 //     int arr[5] = {1, 2, 3, 4, 5};
 
 //     for (int i = 0; i < 5; i++) {
@@ -317,6 +373,7 @@
 
 //     return 0;
 // }
+
 // 1 2 3 4 5
 //   2 3 4 5
 //     3 4 5
@@ -364,7 +421,8 @@
 // #include <stdio.h>
 // #include <math.h>
 
-// int main() {
+// int main()
+// {
 //     double base, exponent;
 
 //     // Get input from the user
@@ -383,6 +441,21 @@
 //     return 0;
 // }
 
+// #include <stdio.h>
+// #include <math.h>
+// int main()
+// {
+//     double base, exponent;
+//     printf("x");
+//     scanf("%lf", &base);
+//     printf("y");
+//     scanf("%lf", &exponent);
+
+//     double result = pow(base, exponent);
+//     printf("%.lf", result);
+
+//     return 0;
+// }
 // WAP to find sum of 10 number using pointer.
 
 // #include <stdio.h>
@@ -485,6 +558,25 @@
 // }
 
 // #include <stdio.h>
+
+// int isPrime(int num){
+//     if(num <=1){
+//         return 0;
+//     }
+//     for(int i = 2 ; i*i < num ;i++){
+//         if(num % i ==0){
+//             return 0;
+//         }
+//     }
+//     return 1;
+// }
+// int main(){
+//     int n ;
+//     printf("print");
+//     scanf("%d",&n);
+
+//     (isPrime(n)) ? printf("prime"):printf("composite");
+// }
 
 // int isPrime(int numb) {
 //     if (numb <= 1) {
@@ -738,15 +830,12 @@
 //     return 0;
 // }
 
-
 // ---------------------Stucture qeustion ------------------
 
-
-                      
-                //   ## 1
+//   ## 1
 
 //  Write a C program using structure that reads the record of 35 students
-//  with member’s roll, name, address and makes and display the records of students 
+//  with member’s roll, name, address and makes and display the records of students
 // who have obtained greater than 250 marks.
 
 // #include <stdio.h>
@@ -806,7 +895,6 @@
 
 // struct Player* players[20];
 
-
 // for(int i =0; i<20;i++){
 
 // players[i]= (struct Player*)malloc(sizeof (struct Player));
@@ -843,53 +931,311 @@
 // wite a c program to enter bid , title , price , pages of 100 books into stucture variable called book
 //  and sort them in desending order on the basics of their title with use of pointer.
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+// #include <stdio.h>
+// #include <stdlib.h>
+// #include <string.h>
 
-struct Book{
-    int bid;
-    char title[50];
-    int price;
-    int pages;
-};
+// struct Book{
+//     int bid;
+//     char title[50];
+//     int price;
+//     int pages;
+// };
 
-int main(){
-    struct Book* books[100];
+// int main(){
+//     struct Book* books[100];
 
-printf("Enter the details of the books");
+// printf("Enter the details of the books");
 
-for(int i = 0; i<100; i++){
-    books[i]= (struct Book*)malloc( sizeof(struct Book));
-    printf("Enter the details of books no : %d ", i+1);
-    printf("bid :");
-    scanf("%d", &books[i]->bid);
-    printf("title :");
-    scanf("%s", books[i]->title);
-    printf("price :");
-    scanf("%s", &books[i]->price);
-    printf("Pages :");
-    scanf("%s", &books[i]->pages);
+// for(int i = 0; i<100; i++){
+//     books[i]= (struct Book*)malloc( sizeof(struct Book));
+//     printf("Enter the details of books no : %d ", i+1);
+//     printf("bid :");
+//     scanf("%d", &books[i]->bid);
+//     printf("title :");
+//     scanf("%s", books[i]->title);
+//     printf("price :");
+//     scanf("%s", &books[i]->price);
+//     printf("Pages :");
+//     scanf("%s", &books[i]->pages);
 
-}
+// }
 
-for(int i = 0 ; i <99; i++){
-    for(int j = 0 ; j < 99-i; j++){
-        if(strcmp(books[j]->title, books[j+1]->title) <0){
-           
-           struct Book* temp = books[j];
-           books[j]= books[j+1];
-           books[j+1]= temp;
+// for(int i = 0 ; i <99; i++){
+//     for(int j = 0 ; j < 99-i; j++){
+//         if(strcmp(books[j]->title, books[j+1]->title) <0){
 
-        }
-    }
-}
+//            struct Book* temp = books[j];
+//            books[j]= books[j+1];
+//            books[j+1]= temp;
 
-printf("maximum to minimum");
-for(int i = 0 ; i<100; i++){
-    printf("bid : %d ", books[i]->bid);
-    free(books[i]);
-}
+//         }
+//     }
+// }
 
-}
+// printf("maximum to minimum");
+// for(int i = 0 ; i<100; i++){
+//     printf("bid : %d ", books[i]->bid);
+//     free(books[i]);
+// }
 
+// }
+
+// write a program to calculate sum of the natural number up to N number using recursive function.
+
+// #include <stdio.h>
+
+// int sumOfNaturalNumbers(int n)
+// {
+//     if (n == 0)
+//     {
+//         return 0;
+//     }
+//     else
+//     {
+//         return n + sumOfNaturalNumbers(n - 1);
+//     }
+// }
+
+// int main()
+// {
+//     int num;
+//     printf("Enter a positive number : ");
+//     scanf("%d", &num);
+//     printf("sum = %d ", sumOfNaturalNumbers(num));
+//     return 0;
+// }
+
+// program to generate fivonacci series up to n terms using resursive dunction.
+
+// #include <stdio.h>
+
+// int fib(int n){
+//   if( n== 0)
+//   return 0;
+//   if(n==1)
+//   return 1;
+//   else
+//   return fib(n-1)+fib(n-2);
+// }
+
+// int main(){
+// int n ;
+// printf("Enter n :");
+// scanf("%d", &n);
+// printf("\n Fibonacci number up to %d term:\n",n);
+// for(int i = 0; i<n; i++){
+//     printf("%d\t", fib(i));
+// }
+// return 0;
+// }
+
+// find the max and min value in array ;
+
+// #include <stdio.h>
+
+// int main()
+// {
+//     int data[5];
+
+//     printf("enter 5 number : ");
+
+//     for (int i = 0; i < 5; i++)
+//     {
+//         scanf("%d", &data[i]);
+//     }
+//      int max = data[0];
+//     int min = data[0];
+
+//     for (int i = 0; i < 5; i++)
+//     {
+//         if (data[i] > max)
+//             max = data[i];
+//     }
+//     for (int i = 0; i < 5; i++)
+//     {
+//         if (data[i] < min)
+//             min = data[i];
+//     }
+//     printf("%d\n", max);
+//     printf("%d", min);
+//     return 0;
+// }
+
+//  find the max and min of array using DMA
+
+// #include <stdio.h>
+// #include <stdlib.h>
+
+// int main() {
+//     int n, i, *ptr, min, max;
+
+//     printf("Enter number of elements: ");
+//     scanf("%d", &n);
+
+//     ptr = (int*) malloc(n * sizeof(int));
+//     if(ptr == NULL) {
+//         printf("Memory not allocated.\n");
+//         exit(0);
+//     }
+
+//     printf("Enter elements: ");
+//     for(i = 0; i < n; i++) {
+//         scanf("%d", ptr + i);
+//     }
+
+//     min = max = ptr[0];
+
+//     for(i = 1; i < n; i++) {
+//         if(ptr[i] < min) {
+//             min = ptr[i];
+//         }
+//         if(ptr[i] > max) {
+//             max = ptr[i];
+//         }
+//     }
+
+//     printf("Minimum = %d\n", min);
+//     printf("Maximum = %d", max);
+
+//     free(ptr);
+
+//     return 0;
+// }
+
+// #include <stdio.h>
+// int main(){
+//     int sec, min, hr, rsec;
+//     printf("enter a second");
+//     scanf("%d", &sec);
+//     hr= sec/3600;
+//     rsec= sec%3600;
+//     min= rsec/60;
+//     sec= min%60;
+
+//     printf("%d hr , %d min, %d sec ",hr,min,sec);
+//     return 0;
+// }
+
+// #include <stdio.h>
+// int main(){
+//     char stri[10];
+
+//     printf("enter a capital letter");
+//     scanf("%[A-z]", stri);
+
+//     printf("%s", stri);
+//     return 0;
+// }
+
+// #include <stdio.h>
+
+// long power(int b ,int  n){
+// if (n == 0)
+// return 1;
+// else
+// return b * power(b, n-1);
+// }
+// int main(){
+//     int b,n;
+//     long p;
+//     printf("Enter 2 number");
+//     scanf("%d%d",&b,&n );
+//     p = power(b,n);
+//     printf("answer is : %d", p);
+//     return 0;
+
+// }
+
+//  find the max and min of array using DMA
+
+
+// #include <stdio.h>
+// #include <stdlib.h>
+
+// int main(){
+//     int n ;
+//     int *ptr ;
+
+// printf("Enter the size");
+// scanf("%d",&n);
+
+// ptr = (int* )malloc(n* sizeof(int));
+
+// if(ptr== NULL){
+//     exit(0);
+// }
+
+// printf("Print enter");
+// for(int i =0; i<n; i++){
+//     scanf("%d", ptr+i);
+// }
+
+// int min = ptr[0];
+// int max=ptr[0];
+
+// for(int i = 0; i<n;i++){
+// if(ptr[i]<min){
+//     min = ptr[i];
+// }
+// if(ptr[i]>max){
+//     max= ptr[i];
+// }
+// }
+// printf("%d\t", max);
+// printf("%d", min);
+
+// return 0;
+
+
+
+// }
+
+// #include <stdio.h>
+// #include <stdlib.h>
+// #include <string.h>
+
+// struct Book{
+//     int bid;
+//     char title[50];
+//     int pages;
+//     int price;
+// };
+
+// int main(){
+
+// struct Book* books[100];
+
+// printf("Enter a books details");
+
+// for(int i= 0; i<100; i++){
+//     books[i]= (struct Book* )malloc(sizeof(struct Book));
+//     printf("Enter books no .%d", i+1);
+//     printf("bid :");
+//     scanf("%d", &books[i]->bid);
+//     printf("title :");
+//     scanf("%s", books[i]->title);
+//     printf("price :");
+//     scanf("%s", &books[i]->price);
+//     printf("Pages :");
+//     scanf("%s", &books[i]->pages);
+
+// }
+
+// for(int i = 0 ; i<99; i++){
+//     for(int j = 0 ; j<99-i; j++){
+//         if(strcmp(books[j]->title, books[j+1]->title) <0){
+//             struct Book* temp = books[j];
+//             books[j]= books[j+1];
+//             books[j+1]= temp;
+//         }
+//     }
+// }
+
+// for(int i = 0 ; i <100; i++){
+//     printf()
+//     free(books[i]);
+// }
+// return 0;
+
+// }
